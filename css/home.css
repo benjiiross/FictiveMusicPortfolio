@@ -1,1 +1,235 @@
+/* FONT */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* END FONT */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo, .logo span{
+    text-decoration: none;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 2em;
+    color: rgb(134, 163, 180);
+    transition: 200ms;
+}
+
+.logo span{
+    color: #00ff37;
+}
+
+.logo:hover {
+    color: #00ff37;
+    transition: 200ms;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    color: rgb(134, 163, 180);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.btn-buying{
+    padding: 10px 20px;
+    background: #00ff37;
+    margin-top: -10px;
+    text-transform:uppercase;
+}
+
+.btn-buying:hover{
+    background: rgb(134, 163, 180);
+    transition: 200ms linear;
+}
+
+header .navbar li a:hover{
+    color: #00ff37;
+    border-bottom: 2px solid #00ff37;
+    transition: 200ms linear;
+}
+
+.banniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banniere .contenu{
+    max-width: 70%;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.banniere h2{
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+p{
+    color: #ffff;
+    font-size: 1.2em;
+}
+
+#bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.btn1, .btn2{
+    font-size: 1em;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 200ms;
+    margin-left: 10px;
+}
+
+.btn1 {
+    background: #00ff37;
+
+}
+
+.btn2 {
+    background: rgb(134, 163, 180);
+}
+
+.btn1:hover, .btn2:hover{
+    letter-spacing: 4px;
+    transition: 100ms linear;
+    }
+
+
+.ligne{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.ligne .rs4_gris_gateau{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+.ligne .rs4_gris_gateau h2{
+    margin-bottom: 20px;
+}
+
+.titre{
+    color: rgb(134, 163, 180);
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+
+.titre span{
+    color: #00ff37;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+
 

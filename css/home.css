@@ -36,6 +36,7 @@ body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     text-decoration: none;
+    /* overflow: hidden; */
 }
 
 header{
@@ -51,22 +52,23 @@ header{
     transition: 0.5s;
 }
 
-.logo, .logo span{
+
+#logo, #logo span{
     text-decoration: none;
 }
 
-.logo {
+#logo {
     font-weight: bold;
     font-size: 2em;
     color: rgb(134, 163, 180);
     transition: 200ms;
 }
 
-.logo span{
+#logo span{
     color: #00ff37;
 }
 
-.logo:hover {
+#logo:hover {
     color: #00ff37;
     transition: 200ms;
 }
@@ -111,12 +113,16 @@ header .navbar li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .banniere .contenu{
+    /* position: relative; */
     max-width: 70%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -154,23 +160,25 @@ header .navbar li a:hover{
     to   { opacity: 1; }
 }
 
-.banniere h2{
+h2{
     color: #fff;
     font-size: 3em;
     text-transform: capitalize;
 }
 
 p{
-    color: #ffff;
+    color: rgb(255, 255, 255);
     font-size: 1.2em;
 }
 
 #bgvideo {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    margin: 0;
+    width: 1536px;
+    
+    /*bottom: 0; */
+    /* min-width: 100%;
+    min-height: 100%; */
 }
 
 .btn1, .btn2{
@@ -231,5 +239,74 @@ p{
     font-weight: 700px;
 }
 
+.ligne .rs4_gris_gateau img{
+    height: 450px;
+    width: 600px;
+    position: relative;
+}
 
 
+.Tbuy{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.buy .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+}
+
+.buy  .contenu .box {
+    width: 350px;
+    margin: 20px;
+    border: 20px solid rgb(255, 255, 255);
+    box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
+}
+
+.buy  .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
+}
+
+.buy .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.buy .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color: rgb(255, 255, 255);
+}
+
+.buy .contenu .box .text h3{
+    font-weight: 400;
+}
+
+.video_container{
+    border-radius: 15px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.soundcloud {
+    margin: 10px;
+}
